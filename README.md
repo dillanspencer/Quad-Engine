@@ -1,11 +1,11 @@
 # Quad Engine
 > 2D Platformer Game Engine
 
-The __Quad Engine__ was developed to make 2D game programming easy for everyone. The engine is made to be implemented into your project before you start developing, not to be used as a jar file. 
+The __Quad Engine__ was developed to make 2D game programming easy for everyone. The engine is made to be implemented into your project before you start developing.
 
 Using Java 8 internal libraries, it is specifically designed for 2D games (no support for 3D at the moment), and proposes a set of functions for 2D resources management (_images_, _sprites_, _animations_, _tiles_...).
-Inputs and outputs are also available, with an easy keys retrieval, mouse movement... Management of music file are also available (_Wav_, _Midi_, and more using plug-ins, such as _Sc68_, _AdPlug_ and _AdlMidi_).
-Windowed, full-screen and applet formats are fully supported, with a complete frame rate control.
+Inputs and outputs are also available, with an easy keys retrieval, mouse movement... Management of music file are also available (_Wav_, _Midi_).
+Windowed and full-screen are fully supported, with a complete frame rate control.
 
 In the __Quad Engine's__ current version, it greatly simplifies the development of __Platformer__, and __Top Down__ games.
 
@@ -62,9 +62,8 @@ Once you installed the __Quad Engine__ in your project, you may would like to kn
 #### Main class
 
 ```java
-public class GameManager{
-    public static void main(String[] args)
-    {
+public class GameManager {
+    public static void main(String[] args) {
          GameContainer gc = new GameContainer(new AbstractGame());
          gc.setWidth(Settings.WIDTH);
          gc.setHeight(Settings.HEIGHT);
