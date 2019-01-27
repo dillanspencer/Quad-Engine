@@ -1,5 +1,5 @@
-# Product Name
-> Short blurb about what your product does.
+# Quad Engine
+> 2D Platformer Game Engine
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
