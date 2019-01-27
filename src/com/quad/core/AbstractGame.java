@@ -35,7 +35,8 @@ public class AbstractGame{
 	}
 	
 	private void loadState(int state) {
-		if(state == FIRST) states[currentState] = null;
+		//load your state here
+		if(state == FIRST) states[currentState] = null; // new TestState();
 	}
 	
 	private void unloadState(int state) {
