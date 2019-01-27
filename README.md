@@ -27,68 +27,84 @@ In the __Quad Engine's__ current version, it greatly simplifies the development 
 >  * Easy object managing
 >  * Object physics, handles collisions between TileMap and other objects
 
-OS X & Linux:
+* #### __FX__
+>  * Resource managment (_sprites, images)
+>  * Font for rendering text
+>  * Audio handling (_support for Wav_)
+>  * Light handling (_size, color_)
 
-```sh
-npm install my-crazy-module --save
+* #### __TileMap__
+>  * 2D parallax background support
+>  * Tile based implementation from single image
+>  * Smooth tile movement using Tween Engine
+
+## Installation
+
+Steps to include the __Quad Engine__ in your project:
+
+1. Install at least the [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+2. Choose your favourite IDE ([Eclipse](http://www.eclipse.org/downloads/), [Netbeans](https://netbeans.org/downloads/)...)
+3. Download the latest [Quad Engine]
+4. Include all __Quad Engine__ classes you need for your project:
+   * __Quad Engine__ _(minimum requirement)_
+     * __GameContainer__ _(main game loop)_
+     * __Abstract Game__ _(base for game development)_
+     * __Renderer__ _(support for rendering)_
+     * __GameObject__ _(base for creating objects)_
+     * __Background__ _(parralax background support)_
+     * __TileMap__ _(support for creating dynamic map)_
+5. You are now ready to use the __Quad Engine__ in your project
+
+## Getting Started
+
+Once you installed the __LionEngine__ in your project, you may would like to know how to prepare a quick sample as a first try:
+
+#### Main class
+
+```java
+public class GameManager
+{
+    public static void main(String[] args)
+    {
+         GameContainer gc = new GameContainer(new AbstractGame());
+         gc.setWidth(Settings.WIDTH);
+         gc.setHeight(Settings.HEIGHT);
+         gc.setScale(Settings.SCALE);
+         gc.setTitle("Quad Engine 1.01");
+         gc.setClearScreen(true);
+         gc.start();
+    }
+}
 ```
 
-Windows:
+#### Minimal sequence
 
-```sh
-edit autoexec.bat
+```java
+public class StateTest extends State{
+
+	@Override
+	public void init(GameContainer gc) {
+		// Initiate state
+		
+	}
+
+	@Override
+	public void update(GameContainer gc, float dt) {
+		// Update state
+		
+	}
+
+	@Override
+	public void render(GameContainer gc, Renderer r) {
+		// Render state
+		
+	}
+
+	@Override
+	public void dipose() {
+		// Dispose state
+		
+	}
+
+}
 ```
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
-
-## Release History
-
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
-
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
