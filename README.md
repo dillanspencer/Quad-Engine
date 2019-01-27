@@ -9,10 +9,13 @@ Windowed, full-screen and applet formats are fully supported, with a complete fr
 
 In the __Quad Engine's__ current version, it greatly simplifies the development of __Platformer__, and __Top Down__ games.
 
-
-![](header.png)
-
-## Installation
+## General Features
+* #### __GameContainer__
+>  * Simple initialization, with title control, and screen configuration 
+>  * Extrapolation control (_machine speed independent_)
+>  * Sequence control (_intro, menu, game, credits..._)
+>  * Easy resource management (_relative to resource directory_)
+>  * Advanced image usage (_sprite, animation, tile, font, parallax_)
 
 OS X & Linux:
 
