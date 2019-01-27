@@ -17,6 +17,16 @@ In the __Quad Engine's__ current version, it greatly simplifies the development 
 >  * Easy resource management (_relative to resource directory_)
 >  * Advanced image usage (_sprite, animation, tile, font, parallax_)
 
+* #### __Renderer__
+>  * 2D dynamic lighting
+>  * 2D shadow rendering using ShadowTypes (_Full, Half, Total, None_)
+>  * Renders images (_sprites, animations, objects, shapes_)
+
+* #### __Components__
+>  * GameObject class handles objects in the game (_player, enemies, items_) 
+>  * Easy object managing
+>  * Object physics, handles collisions between TileMap and other objects
+
 OS X & Linux:
 
 ```sh
