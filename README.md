@@ -62,8 +62,7 @@ Once you installed the __Quad Engine__ in your project, you may would like to kn
 #### Main class
 
 ```java
-public class GameManager
-{
+public class GameManager{
     public static void main(String[] args)
     {
          GameContainer gc = new GameContainer(new AbstractGame());
@@ -77,7 +76,7 @@ public class GameManager
 }
 ```
 
-#### Minimal sequence
+#### Minimal State
 
 ```java
 public class StateTest extends State{
