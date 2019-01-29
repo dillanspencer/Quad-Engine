@@ -21,8 +21,7 @@ public class AbstractGame{
 	private boolean paused;
 	
 	//states
-	public static final int NUMSTATES = 10;
-	public static final int FIRST = 0;
+	public static final int NUMSTATES = 1;
 	
 	public AbstractGame(){
 		states = new State[NUMSTATES];
@@ -30,13 +29,11 @@ public class AbstractGame{
 		/*
 		 * Load the first state when the game runs
 		 */
-		currentState = FIRST;
 		loadState(currentState);
 	}
 	
 	private void loadState(int state) {
 		//load your state here
-		if(state == FIRST) states[currentState] = null; // new TestState();
 	}
 	
 	private void unloadState(int state) {
