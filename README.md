@@ -106,3 +106,13 @@ public class StateTest extends State{
 
 }
 ```
+
+#### AbstractGame (Add this code)
+
+```java
+private void loadState(int state) {
+	// implement this into your code. TestState() is your state and VALUE is its index.
+	if(state == VALUE) states[currentState] = new TestState();
+}
+```
+
