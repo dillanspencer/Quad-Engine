@@ -57,7 +57,7 @@ Steps to include the __Quad Engine__ in your project:
 
 ## Getting Started
 
-Once you installed the __Quad Engine__ in your project, you may would like to know how to prepare a quick sample as a first try:
+Once you installed the __Quad Engine__ in your project, you can quickly start creating a project using the following code:
 
 #### Main class
 
