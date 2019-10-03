@@ -235,7 +235,7 @@ public class TileMap {
 		
 	}
 	
-	public void draw(Renderer g) {
+	public void render(Renderer g) {
 		
 		
 		for(int row = rowOffset; row < rowOffset + numRowsToDraw; row++) {
